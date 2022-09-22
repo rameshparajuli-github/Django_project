@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block title %} THE BARS-Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+
+{% block body %}
+
+<div class="container ml-0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-item active">
+            <img class="p-1" src="/static/img/laptop.jpeg" alt="First slide" width="1240" height="500">
+        </div>
+        <div class="carousel-caption d-none d-md-block ">
+        <h1 class="text-center"><b>
+                    WELCOME TO
+                </b></h1>
+            <h1 class="text-center"><b>
+                    <marquee>THE BARS OFFICIAL WEBSITE</marquee>
+                </b></h1>
+            <h2 class="text-center"><b>Programmer | Designer | photographer</h2></b>
+
+            <p>Life is learning and learning is life until the death knocks at our door.</p>
+            <span class="elementor-button-content-wrapper">
+                <a class="btn btn-info" href="/contact" role="button">Join With Us</a>
+
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="media">
+  <img class="mr-3" src="/static/img/images.jpeg" alt="Generic placeholder image">
+  <div class="media-body">
+    <h2 class="mt-0">WHO AM I!</h2>
+    My name is Ramesh Parajuli.I'm from Pokhara-23.I have practical experience in information technology field.
+    I am a student.Regarding I have two years of experience in web development.
+    I familiar with HTML , CSS , Python , C and C++.Besides, I have some basic knowledge of flutter too.
+    I want to be the best as much as i can be.I would like to learn new things related to information technology.
+     I am proficient at typing as well as playing cricket and enjoy traveling.
+  </div>
+</div>
+</div>
+
+    <div class="container md-3">
+      <div class="jumbotron m-2">
+        <h1 class="display-4">The Purpose Of Creating This Site</h1>
+        <p class="lead">Here our service for you, Fashion photo shoot and also shoot weeding video, Graphic Design,Web develop,App develop, e.t.c </p>
+        <hr class="my-4">
+        <p>In this site you can read articles too.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/blog" role="button">Learn more</a>
+        </p>
+      </div>
+
+    </div>
+    
+
+  <div>
+        <!-- FOOTER -->
+      <footer class="container-fluid bg-dark m-0 my-1 py-1 text-light">
+        <p class="float-left"><a href="https://www.instagram.com/ramesh_prj/">Made by Ramesh Parajuli</a></p>
+        <p class="text-right">NEPAL| Pokhara,33700| THE BARS.<br>
+        email: rameshparajuli.work@gmail.com</p>
+        <p class="text-center">Copyright © 2021 THE BARS</p>
+      </footer>
+      </main>
+</div>
+    {% endblock body %}

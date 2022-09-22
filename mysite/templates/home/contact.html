@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}THE BARS-Contact {% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+{% block body %}
+<div class="container my-3">
+  <h1>Contact With THE BARS</h1>
+  <img src="/static/img/qr.png" class="rounded float-right" alt="QR">
+  <form method="post" action="/contact">
+    {% csrf_token %}
+  <div class="container">
+    <div class="form-group col-lg-10">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Enter name">
+    </div>
+
+    <div class="form-group col-lg-10">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+        placeholder="example@gmail.com">
+      <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group col-lg-10">
+      <label for="phone">Phone Number</label>
+      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+    </div>
+
+    <div class="form-group col-lg-10">
+      <label for="content">How Can I Help You</label>
+      <textarea class="form-control" name="content" id="content" cols="30" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+  <footer class="container-fluid bg-dark m-1 py-1 text-light">
+    <p class="float-left"><a href="https://www.instagram.com/ramesh_prj/">Made by Ramesh Parajuli</a></p>
+    <p class="text-right">NEPAL| Pokhara,33700| THE BARS.<br>
+      email: rameshparajuli.work@gmail.com</p>
+    <p class="text-center">Copyright © 2021 THE BARS</p>
+  </footer>
+  </main>
+</div>
+
+{% endblock body %}
